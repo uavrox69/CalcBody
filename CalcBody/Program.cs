@@ -14,8 +14,7 @@ namespace CalcBody
 
 
         static void Main(string[] args)
-        {
-            double sum;//will need sum later on with culumitive
+        {           
             Application.Run(new Form1());
             Parsing sent = new Parsing();
             string pattern = "[0-9.]";

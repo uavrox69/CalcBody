@@ -34,7 +34,7 @@ namespace CalcBody
             {
                 sum = a / b;
             }
-            catch (System.DivideByZeroException e)
+            catch (System.DivideByZeroException)
             {
                 zero = true;
             }
@@ -50,7 +50,7 @@ namespace CalcBody
        public double DoMath()
         {            
             double sum = 0;
-            int spot = 0;
+            int spot;
             while (signs.Count != 0)
             {
                 spot = FindHiSign();

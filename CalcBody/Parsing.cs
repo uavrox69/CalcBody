@@ -18,8 +18,8 @@ namespace CalcBody
             stringSize = equation.Length;
             int place = stringSpot;
             string nonConNum = "";
-            double stringSum = 0;
-            double a = 0;
+            double stringSum,a;
+            bool negNum = false;
             
             Parsing paran = new Parsing();
             CalcMethods work = new CalcMethods();
@@ -95,8 +95,23 @@ namespace CalcBody
                         nonConNum = "";
                         numsL.Add(a);
                     }
+                    if (equation[x].ToString() == "-")
+                    {
+                        if ( x == 0 || equation[x-1].ToString() == "(")
+                        {
+                            nonConNum = nonConNum + equation[x].ToString();
+                            negNum = true;
+                        }
+                    }
+                    if ( negNum == false )
+                    {
+                        signL.Add(equation[x]);
+                    }
+                    else
+                    {
+                        negNum = false;
+                    }
                     
-                    signL.Add(equation[x]);
                 }
             }
             
@@ -106,6 +121,7 @@ namespace CalcBody
             return stringSum;
 
         }
+        //with gui it is possible it is  no longer needed
         public string ElimSpace(string unFixed)
         {
             string pattern = "\\s";

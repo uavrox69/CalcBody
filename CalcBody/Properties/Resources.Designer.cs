@@ -59,5 +59,15 @@ namespace CalcBody.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap soeb_power_symbol_clip_art_10420 {
+            get {
+                object obj = ResourceManager.GetObject("soeb_power_symbol_clip_art_10420", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

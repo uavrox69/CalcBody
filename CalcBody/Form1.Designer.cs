@@ -50,10 +50,9 @@ namespace CalcBody
             this.Multiply = new System.Windows.Forms.Button();
             this.Subtract = new System.Windows.Forms.Button();
             this.Addition = new System.Windows.Forms.Button();
-            this.Equals = new System.Windows.Forms.Button();
-            this.erase = new System.Windows.Forms.PictureBox();
+            this.Eq = new System.Windows.Forms.Button();
+            this.Power = new System.Windows.Forms.Button();
             EndParan = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.erase)).BeginInit();
             this.SuspendLayout();
             // 
             // EndParan
@@ -291,28 +290,29 @@ namespace CalcBody
             this.Addition.UseVisualStyleBackColor = false;
             this.Addition.Click += new System.EventHandler(this.Addition_Click);
             // 
-            // Equals
+            // Eq
             // 
-            this.Equals.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Equals.Location = new System.Drawing.Point(420, 404);
-            this.Equals.Margin = new System.Windows.Forms.Padding(10);
-            this.Equals.Name = "Equals";
-            this.Equals.Size = new System.Drawing.Size(94, 61);
-            this.Equals.TabIndex = 20;
-            this.Equals.Text = "=";
-            this.Equals.UseVisualStyleBackColor = false;
-            this.Equals.Click += new System.EventHandler(this.Equals_Click);
+            this.Eq.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Eq.Location = new System.Drawing.Point(420, 404);
+            this.Eq.Margin = new System.Windows.Forms.Padding(10);
+            this.Eq.Name = "Eq";
+            this.Eq.Size = new System.Drawing.Size(94, 61);
+            this.Eq.TabIndex = 20;
+            this.Eq.Text = "=";
+            this.Eq.UseVisualStyleBackColor = false;
+            this.Eq.Click += new System.EventHandler(this.Equals_Click);
             // 
-            // erase
+            // Power
             // 
-            this.erase.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.erase.Image = ((System.Drawing.Image)(resources.GetObject("erase.Image")));
-            this.erase.Location = new System.Drawing.Point(458, 24);
-            this.erase.Name = "erase";
-            this.erase.Size = new System.Drawing.Size(56, 27);
-            this.erase.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.erase.TabIndex = 21;
-            this.erase.TabStop = false;
+            this.Power.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Power.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Power.BackgroundImage")));
+            this.Power.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Power.Location = new System.Drawing.Point(465, 24);
+            this.Power.Name = "Power";
+            this.Power.Size = new System.Drawing.Size(33, 32);
+            this.Power.TabIndex = 21;
+            this.Power.UseVisualStyleBackColor = false;
+            this.Power.Click += new System.EventHandler(this.Power_Click);
             // 
             // Form1
             // 
@@ -320,8 +320,8 @@ namespace CalcBody
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(588, 491);
-            this.Controls.Add(this.erase);
-            this.Controls.Add(this.Equals);
+            this.Controls.Add(this.Power);
+            this.Controls.Add(this.Eq);
             this.Controls.Add(this.Addition);
             this.Controls.Add(this.Subtract);
             this.Controls.Add(this.Multiply);
@@ -347,7 +347,6 @@ namespace CalcBody
             this.Text = "CalcBody";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Load += new System.EventHandler(this.CalcBody_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.erase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,10 +374,10 @@ namespace CalcBody
         private System.Windows.Forms.Button Multiply;
         private System.Windows.Forms.Button Subtract;
         private System.Windows.Forms.Button Addition;
-        private System.Windows.Forms.Button Equals;
-        private System.Windows.Forms.PictureBox erase;
+        private System.Windows.Forms.Button Eq;
         private System.Windows.Forms.Button startParan;
         private System.Windows.Forms.Button StartParan;
+        private System.Windows.Forms.Button Power;
     }
 }
 

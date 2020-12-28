@@ -14,7 +14,3 @@ C:\Users\Dilliy\source\repos\CalcBody\CalcBody\obj\Debug\netcoreapp3.1\CalcBody.
 C:\Users\Dilliy\source\repos\CalcBody\CalcBody\obj\Debug\netcoreapp3.1\CalcBody.genruntimeconfig.cache
 C:\Users\Dilliy\source\repos\CalcBody\CalcBody\obj\Debug\netcoreapp3.1\CalcBody.Properties.Resources.resources
 C:\Users\Dilliy\source\repos\CalcBody\CalcBody\obj\Debug\netcoreapp3.1\CalcBody.Form1.resources
-C:\Users\Dilliy\source\repos\CalcBody\CalcBody\bin\Debug\netcoreapp3.1\Calculator.exe
-C:\Users\Dilliy\source\repos\CalcBody\CalcBody\bin\Debug\netcoreapp3.1\Calculator.dll
-C:\Users\Dilliy\source\repos\CalcBody\CalcBody\bin\Debug\netcoreapp3.1\Calculator.pdb
-C:\Users\Dilliy\source\repos\CalcBody\CalcBody\obj\Debug\netcoreapp3.1\CalcBody.csproj.CopyComplete

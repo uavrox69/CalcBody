@@ -30,8 +30,9 @@ namespace CalcBody
 
         }
 
-        private void clear_Click(object sender, EventArgs e)
+        private void  clear_Click(object sender, EventArgs e)
         {
+            equation = "";  
             eqaBox.Text = "";
             eqaBox.Text = equation;
         }
@@ -162,11 +163,17 @@ namespace CalcBody
 
         private void Equals_Click(object sender, EventArgs e)
         {
-            Calculator.Parsing sent = new Calculator.Parsing();
+            Parsing sent = new Parsing();
            
-            sum = sent.ReadString(equation, r, 0);           
+            sum = sent.ReadString(equation, r, 0);
+            equation = sum.ToString();
             eqaBox.Text = "";
-            eqaBox.Text = sum.ToString();
+            eqaBox.Text = equation;
+        }
+
+        private void Power_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
