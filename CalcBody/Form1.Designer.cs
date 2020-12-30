@@ -52,6 +52,7 @@ namespace CalcBody
             this.Addition = new System.Windows.Forms.Button();
             this.Eq = new System.Windows.Forms.Button();
             this.Power = new System.Windows.Forms.Button();
+            this.erase = new System.Windows.Forms.Button();
             EndParan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -59,8 +60,8 @@ namespace CalcBody
             // 
             EndParan.BackColor = System.Drawing.SystemColors.ButtonFace;
             EndParan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            EndParan.Location = new System.Drawing.Point(150, 80);
-            EndParan.Margin = new System.Windows.Forms.Padding(10);
+            EndParan.Location = new System.Drawing.Point(160, 80);
+            EndParan.Margin = new System.Windows.Forms.Padding(20, 10, 20, 10);
             EndParan.Name = "EndParan";
             EndParan.Size = new System.Drawing.Size(94, 61);
             EndParan.TabIndex = 2;
@@ -115,7 +116,7 @@ namespace CalcBody
             // Two
             // 
             this.Two.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Two.Location = new System.Drawing.Point(150, 161);
+            this.Two.Location = new System.Drawing.Point(160, 161);
             this.Two.Margin = new System.Windows.Forms.Padding(10);
             this.Two.Name = "Two";
             this.Two.Size = new System.Drawing.Size(94, 61);
@@ -127,7 +128,7 @@ namespace CalcBody
             // Five
             // 
             this.Five.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Five.Location = new System.Drawing.Point(150, 242);
+            this.Five.Location = new System.Drawing.Point(160, 242);
             this.Five.Margin = new System.Windows.Forms.Padding(10);
             this.Five.Name = "Five";
             this.Five.Size = new System.Drawing.Size(94, 61);
@@ -139,7 +140,7 @@ namespace CalcBody
             // Clear
             // 
             this.Clear.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Clear.Location = new System.Drawing.Point(257, 80);
+            this.Clear.Location = new System.Drawing.Point(277, 80);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(94, 61);
             this.Clear.TabIndex = 7;
@@ -150,7 +151,7 @@ namespace CalcBody
             // Three
             // 
             this.Three.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Three.Location = new System.Drawing.Point(257, 161);
+            this.Three.Location = new System.Drawing.Point(277, 161);
             this.Three.Margin = new System.Windows.Forms.Padding(10);
             this.Three.Name = "Three";
             this.Three.Size = new System.Drawing.Size(94, 61);
@@ -162,7 +163,7 @@ namespace CalcBody
             // Six
             // 
             this.Six.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Six.Location = new System.Drawing.Point(257, 242);
+            this.Six.Location = new System.Drawing.Point(277, 242);
             this.Six.Margin = new System.Windows.Forms.Padding(10);
             this.Six.Name = "Six";
             this.Six.Size = new System.Drawing.Size(94, 61);
@@ -174,7 +175,7 @@ namespace CalcBody
             // Eight
             // 
             this.Eight.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Eight.Location = new System.Drawing.Point(150, 323);
+            this.Eight.Location = new System.Drawing.Point(160, 323);
             this.Eight.Margin = new System.Windows.Forms.Padding(10);
             this.Eight.Name = "Eight";
             this.Eight.Size = new System.Drawing.Size(94, 61);
@@ -186,7 +187,7 @@ namespace CalcBody
             // Nine
             // 
             this.Nine.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Nine.Location = new System.Drawing.Point(257, 323);
+            this.Nine.Location = new System.Drawing.Point(277, 323);
             this.Nine.Name = "Nine";
             this.Nine.Size = new System.Drawing.Size(94, 61);
             this.Nine.TabIndex = 11;
@@ -221,7 +222,7 @@ namespace CalcBody
             // 
             this.Zero.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Zero.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Zero.Location = new System.Drawing.Point(150, 404);
+            this.Zero.Location = new System.Drawing.Point(160, 404);
             this.Zero.Margin = new System.Windows.Forms.Padding(10);
             this.Zero.Name = "Zero";
             this.Zero.Size = new System.Drawing.Size(94, 61);
@@ -233,7 +234,7 @@ namespace CalcBody
             // D
             // 
             this.D.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.D.Location = new System.Drawing.Point(257, 404);
+            this.D.Location = new System.Drawing.Point(277, 404);
             this.D.Margin = new System.Windows.Forms.Padding(10);
             this.D.Name = "D";
             this.D.Size = new System.Drawing.Size(94, 61);
@@ -245,7 +246,7 @@ namespace CalcBody
             // Divide
             // 
             this.Divide.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Divide.Location = new System.Drawing.Point(420, 80);
+            this.Divide.Location = new System.Drawing.Point(437, 80);
             this.Divide.Margin = new System.Windows.Forms.Padding(10);
             this.Divide.Name = "Divide";
             this.Divide.Size = new System.Drawing.Size(94, 61);
@@ -257,7 +258,7 @@ namespace CalcBody
             // Multiply
             // 
             this.Multiply.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Multiply.Location = new System.Drawing.Point(420, 161);
+            this.Multiply.Location = new System.Drawing.Point(437, 161);
             this.Multiply.Margin = new System.Windows.Forms.Padding(10);
             this.Multiply.Name = "Multiply";
             this.Multiply.Size = new System.Drawing.Size(94, 61);
@@ -269,7 +270,7 @@ namespace CalcBody
             // Subtract
             // 
             this.Subtract.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Subtract.Location = new System.Drawing.Point(420, 242);
+            this.Subtract.Location = new System.Drawing.Point(437, 242);
             this.Subtract.Margin = new System.Windows.Forms.Padding(10);
             this.Subtract.Name = "Subtract";
             this.Subtract.Size = new System.Drawing.Size(94, 61);
@@ -281,7 +282,7 @@ namespace CalcBody
             // Addition
             // 
             this.Addition.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Addition.Location = new System.Drawing.Point(420, 323);
+            this.Addition.Location = new System.Drawing.Point(437, 323);
             this.Addition.Margin = new System.Windows.Forms.Padding(10);
             this.Addition.Name = "Addition";
             this.Addition.Size = new System.Drawing.Size(94, 61);
@@ -293,7 +294,7 @@ namespace CalcBody
             // Eq
             // 
             this.Eq.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Eq.Location = new System.Drawing.Point(420, 404);
+            this.Eq.Location = new System.Drawing.Point(437, 404);
             this.Eq.Margin = new System.Windows.Forms.Padding(10);
             this.Eq.Name = "Eq";
             this.Eq.Size = new System.Drawing.Size(94, 61);
@@ -307,12 +308,24 @@ namespace CalcBody
             this.Power.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Power.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Power.BackgroundImage")));
             this.Power.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Power.Location = new System.Drawing.Point(465, 24);
+            this.Power.Location = new System.Drawing.Point(498, 24);
             this.Power.Name = "Power";
             this.Power.Size = new System.Drawing.Size(33, 32);
             this.Power.TabIndex = 21;
             this.Power.UseVisualStyleBackColor = false;
             this.Power.Click += new System.EventHandler(this.Power_Click);
+            // 
+            // erase
+            // 
+            this.erase.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.erase.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("erase.BackgroundImage")));
+            this.erase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.erase.Location = new System.Drawing.Point(465, 24);
+            this.erase.Name = "erase";
+            this.erase.Size = new System.Drawing.Size(33, 32);
+            this.erase.TabIndex = 22;
+            this.erase.UseVisualStyleBackColor = false;
+            this.erase.Click += new System.EventHandler(this.erase_Click);
             // 
             // Form1
             // 
@@ -320,6 +333,7 @@ namespace CalcBody
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(588, 491);
+            this.Controls.Add(this.erase);
             this.Controls.Add(this.Power);
             this.Controls.Add(this.Eq);
             this.Controls.Add(this.Addition);
@@ -378,6 +392,7 @@ namespace CalcBody
         private System.Windows.Forms.Button startParan;
         private System.Windows.Forms.Button StartParan;
         private System.Windows.Forms.Button Power;
+        private System.Windows.Forms.Button erase;
     }
 }
 
