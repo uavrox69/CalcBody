@@ -40,6 +40,7 @@ namespace CalcBody
             eqaBox.Text = "";
             eqaBox.Text = equation;
             negNum = false;
+            paranNum = 0;
         }
 
         private void parans_Click(object sender, EventArgs e)
@@ -190,6 +191,14 @@ namespace CalcBody
         {
             if (equation != "")
             {
+                if (equation[equation.Length -1].ToString() == ")")
+                {
+                    paranNum += 1;
+                }
+                else if (equation[equation.Length - 1].ToString() == "(")
+                {
+                    paranNum -= 1;
+                }
                 equation = equation.Remove((equation.Length - 1));
                 eqaBox.Clear();
                 eqaBox.Text = equation;
