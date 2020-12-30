@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace CalcBody
 {
@@ -17,36 +18,31 @@ namespace CalcBody
             signs = new List<char>();
 
         }       
-        public double Addition(double a, double b)
-        {
-            double sum = a + b;
-            return sum;
-        }
-        public double Subtraction(double a, double b)
-        {
-            double sum = a - b;
-            return sum;
-        }
-        public double Division(double a, double b)
+       
+        public double MathStep( char sign, int spot )
         {
             double sum = 0;
-            try
+            switch (sign)
             {
-                sum = a / b;
+                case '+':
+                    sum = nums[spot] + nums[spot + 1];
+                    break;
+                case '-':
+                    sum = nums[spot] - nums[spot + 1];
+                    break;
+                case '*':
+                    sum = nums[spot] * nums[spot + 1];
+                    break;
+                case '/':
+                    sum = nums[spot] / nums[spot + 1];
+                    break;
+                default:
+                    Console.WriteLine("Not a valid sign");
+                    break;
+
             }
-            catch (System.DivideByZeroException)
-            {
-                zero = true;
-            }
-            
             return sum;
         }
-        public double Multiplication(double a, double b)
-        {
-            double sum = a * b;
-            return sum;
-        }
-        
        public double DoMath()
         {            
             double sum = 0;
@@ -59,35 +55,27 @@ namespace CalcBody
                 {
                     spot = 0;
                 }
-                char sign = signs[spot];
-                switch (sign)
-                {
-                    case '+':
-                        sum = Addition(nums[spot], nums[spot + 1]);
-                        break;
-                    case '-':
-                        sum = Subtraction(nums[spot], nums[spot + 1]);
-                        break;
-                    case '*':
-                        sum = Multiplication(nums[spot], nums[spot + 1]);
-                        break;
-                    case '/':
-                        sum = Division(nums[spot], nums[spot + 1]);
-                        break;
-                    default:
-                        Console.WriteLine("Not a valid sign");
-                        break;
 
-                }
+                char sign = signs[spot];
+
+                sum = MathStep(sign, spot);
+
                 nums.RemoveAt(spot);
                 nums.Insert(spot, sum);
                 nums.RemoveAt(spot + 1);
                 signs.RemoveAt(spot);
+
                 sum = 0;
             }
-            
-            return nums[0];
-
+            try
+            { 
+                return nums[0]; 
+            }
+            catch ( System.ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Your Equation is empty or just parenthesis");
+                return 0;
+            }
         }
         public int FindHiSign()
         {

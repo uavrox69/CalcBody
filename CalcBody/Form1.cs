@@ -218,7 +218,6 @@ namespace CalcBody
             {
                 
                 equation = equation.Remove(negSpot, 2);
-                //MessageBox.Show($"here {equation.Length}"); for trouble shooting
                 eqaBox.Text = equation;
                 negNum = false;
                 spot = negSpot;
