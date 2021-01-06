@@ -68,15 +68,17 @@ namespace CalcBody
                 sum = 0;
             }
             try
-            { 
+            {
                 return nums[0]; 
             }
             catch ( System.ArgumentOutOfRangeException)
             {
-                MessageBox.Show("Your Equation is empty or just parenthesis");
+
+                Program.msg.ErrorInEq();
                 return 0;
             }
         }
+        //This searches the list and finds the proper signs for proper order of operation
         public int FindHiSign()
         {
             int place = signs.Count + 1;

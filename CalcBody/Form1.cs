@@ -15,7 +15,7 @@ namespace CalcBody
     public partial class Form1 : Form
     {
         String equation = "";
-        String error = "Your parenthesis are not equal";
+        String error = "There is an error in your Equation";
         double sum = 0;
         Regex r;
         bool negNum = false;
@@ -36,6 +36,7 @@ namespace CalcBody
 
         private void  clear_Click(object sender, EventArgs e)
         {
+            ClearErrorInEQ();
             equation = "";  
             eqaBox.Text = "";
             eqaBox.Text = equation;
@@ -174,12 +175,14 @@ namespace CalcBody
         {
             if (paranNum != 0)
             {
-                MessageBox.Show(error);
+                ErrorInEq();
             }
             else
             {
+                ClearErrorInEQ();
+                
                 Parsing sent = new Parsing();
-                sum = sent.ReadString(equation, r, 0);
+                sum = sent.ReadString(equation, r, 0);              
                 equation = sum.ToString();
                 eqaBox.Text = "";
                 eqaBox.Text = equation;
@@ -251,7 +254,16 @@ namespace CalcBody
             }
     
         }
+        public void ErrorInEq()
+        {
+            ErrorStuff.Visible = true;
+            ErrorStuff.Text = error;
+        }
+        public void ClearErrorInEQ()
+        {
+            ErrorStuff.Visible = false;
+            ErrorStuff.Text = "";
+        }
 
-       
     }
 }

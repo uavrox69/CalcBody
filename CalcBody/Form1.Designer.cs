@@ -53,6 +53,7 @@ namespace CalcBody
             this.Eq = new System.Windows.Forms.Button();
             this.Power = new System.Windows.Forms.Button();
             this.erase = new System.Windows.Forms.Button();
+            this.ErrorStuff = new System.Windows.Forms.TextBox();
             EndParan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -85,9 +86,11 @@ namespace CalcBody
             // 
             // eqaBox
             // 
-            this.eqaBox.Location = new System.Drawing.Point(44, 24);
+            this.eqaBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.eqaBox.Location = new System.Drawing.Point(47, 12);
+            this.eqaBox.Margin = new System.Windows.Forms.Padding(0);
             this.eqaBox.Name = "eqaBox";
-            this.eqaBox.Size = new System.Drawing.Size(415, 27);
+            this.eqaBox.Size = new System.Drawing.Size(415, 20);
             this.eqaBox.TabIndex = 1;
             this.eqaBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -308,7 +311,7 @@ namespace CalcBody
             this.Power.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Power.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Power.BackgroundImage")));
             this.Power.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Power.Location = new System.Drawing.Point(498, 24);
+            this.Power.Location = new System.Drawing.Point(498, 12);
             this.Power.Name = "Power";
             this.Power.Size = new System.Drawing.Size(33, 32);
             this.Power.TabIndex = 21;
@@ -320,12 +323,23 @@ namespace CalcBody
             this.erase.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.erase.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("erase.BackgroundImage")));
             this.erase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.erase.Location = new System.Drawing.Point(465, 24);
+            this.erase.Location = new System.Drawing.Point(465, 12);
             this.erase.Name = "erase";
             this.erase.Size = new System.Drawing.Size(33, 32);
             this.erase.TabIndex = 22;
             this.erase.UseVisualStyleBackColor = false;
             this.erase.Click += new System.EventHandler(this.erase_Click);
+            // 
+            // ErrorStuff
+            // 
+            this.ErrorStuff.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ErrorStuff.Location = new System.Drawing.Point(47, 38);
+            this.ErrorStuff.Margin = new System.Windows.Forms.Padding(0);
+            this.ErrorStuff.Name = "ErrorStuff";
+            this.ErrorStuff.Size = new System.Drawing.Size(415, 20);
+            this.ErrorStuff.TabIndex = 23;
+            this.ErrorStuff.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ErrorStuff.Visible = false;
             // 
             // Form1
             // 
@@ -333,6 +347,7 @@ namespace CalcBody
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(588, 491);
+            this.Controls.Add(this.ErrorStuff);
             this.Controls.Add(this.erase);
             this.Controls.Add(this.Power);
             this.Controls.Add(this.Eq);
@@ -393,6 +408,8 @@ namespace CalcBody
         private System.Windows.Forms.Button StartParan;
         private System.Windows.Forms.Button Power;
         private System.Windows.Forms.Button erase;
+        private System.Windows.Forms.TextBox ErrorMessage;
+        private System.Windows.Forms.TextBox ErrorStuff;
     }
 }
 

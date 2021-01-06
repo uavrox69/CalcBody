@@ -12,7 +12,7 @@ namespace CalcBody
         public static int stringSize= 0;
         Regex r;
 
-
+        //This method is used to read the string and seperate the numbers and symbols into different lists using regex
         public double ReadString(string equation, Regex pass, int stringSpot)
         {
             stringSize = equation.Length;
@@ -121,7 +121,7 @@ namespace CalcBody
             return stringSum;
 
         }
-        //with gui it is possible it is  no longer needed
+        //with gui it is possible it is  no longer needed. Used to eleminate space and make reading easier
         public string ElimSpace(string unFixed)
         {
             string pattern = "\\s";
